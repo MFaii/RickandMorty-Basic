@@ -6,3 +6,117 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-image: url("https://images3.alphacoders.com/812/812062.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.pj-card {
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  color: #f1f1f1;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.pj-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid #f1f1f1;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter form {
+  display: flex;
+  gap: 10px;
+}
+
+.filter form input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.filter form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 20px;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+}
+
+.nav-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-page button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .img-logo img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px;
+  }
+}
