@@ -11,11 +11,16 @@ const Home = () => {
   const NavPage = (props) => {
     return (
       <div className="nav-page">
-        <button className="" onClick={() => props.setPage(props.page - 1)}>
-          Pagina {props.page - 1}
-        </button>
+        {page <= 0 || page === 1 ? (
+          <button>First Page</button>
+        ) : (
+          <button className="" onClick={() => props.setPage(props.page - 1)}>
+            Page {props.page - 1}
+          </button>
+        )}
+
         <button className="" onClick={() => props.setPage(props.page + 1)}>
-          Pagina {props.page + 1}
+          Page {props.page + 1}
         </button>
       </div>
     );
