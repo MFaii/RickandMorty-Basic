@@ -117,6 +117,12 @@ body {
   cursor: pointer;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) {
   .img-logo img {
     width: 300px;

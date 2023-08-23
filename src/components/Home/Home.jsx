@@ -52,7 +52,9 @@ const Home = () => {
       </div>
       <Filter texto={texto} setTexto={setTexto} />
       {loading ? (
-        <h1>Loading...</h1>
+        <div className="loading">
+          <h1>Loading...</h1>
+        </div>
       ) : (
         <PjsCards texto={texto} characters={charactersFiltered} />
       )}
