@@ -22,6 +22,9 @@ const Home = () => {
         <button className="" onClick={() => props.setPage(props.page + 1)}>
           Page {props.page + 1}
         </button>
+        <button className="" onClick={() => props.setPage(1)}>
+          Back to page 1
+        </button>
       </div>
     );
   };
@@ -50,7 +53,9 @@ const Home = () => {
           src="https://www.pngplay.com/wp-content/uploads/14/Rick-And-Morty-Logo-Transparent-File.png"
         />
       </div>
-      <Filter texto={texto} setTexto={setTexto} />
+
+      {/* <Filter texto={texto} setTexto={setTexto} /> */}
+      <NavPage setPage={setPage} page={page} />
       {loading ? (
         <div className="loading">
           <h1>Loading...</h1>

@@ -20,7 +20,6 @@ export const Filter = ({ texto, setTexto }) => {
           value={texto}
           onChange={handleInputChange}
         ></input>
-        <button type="submit">Search</button>
       </form>
     </section>
   );
