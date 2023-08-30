@@ -66,6 +66,7 @@ const Home = () => {
         <img
           href="#"
           src="https://www.pngplay.com/wp-content/uploads/14/Rick-And-Morty-Logo-Transparent-File.png"
+          alt="Rick and Morty Logo"
         />
       </div>
 
