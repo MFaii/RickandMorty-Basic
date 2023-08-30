@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PjsCards from "../Characters/Pjs-Cards/PjsCards";
 import { Filter } from "../Filter/Filter";
+import logo from "/Logo.png";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -63,11 +64,7 @@ const Home = () => {
   return (
     <>
       <div className="img-logo">
-        <img
-          href="#"
-          src="https://www.pngplay.com/wp-content/uploads/14/Rick-And-Morty-Logo-Transparent-File.png"
-          alt="Rick and Morty Logo"
-        />
+        <img href="#" src={logo} alt="Rick and Morty Logo" />
       </div>
 
       {/* <Filter texto={texto} setTexto={setTexto} /> */}
